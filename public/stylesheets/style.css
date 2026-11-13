@@ -6,3 +6,62 @@ body {
 a {
   color: #00B7FF;
 }
+
+table { 
+  border-collapse: collapse;
+}
+
+th, td { 
+  padding: 6px 12px; border-bottom: 1px solid #ddd; text-align: left; 
+}
+
+.sideBtn { 
+  display: inline; 
+}
+
+button{
+  background-color: inherit;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 5px;
+  transition: filter 0.15s;
+}
+
+button:hover{
+  cursor: pointer;
+  filter: brightness(0.9);
+}
+
+button.complete { background: #2e7d32; color: #fff; }
+button.edit     { background: #f9a825; color: #222; }
+button.delete   { background: #c62828; color: #fff; }
+button.create   { background: #1565c0; color: #fff; }
+
+#toast-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1000;
+}
+
+.toast {
+  padding: 10px 16px;
+  background: #333;
+  color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.25s, transform 0.25s;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast.error { background: #b00020; }
+.toast.success { background: #2e7d32; }
