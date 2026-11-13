@@ -1,11 +1,32 @@
-# CS208 Full Stack Final Project
+# CS208 Full Stack 12.03 Lab - TODOS
+- Name: Gideon Hammond
+- Term: Fall 2026
 
-## Documentation
+## Project Description
 
-- Running the example project is documented [here](docs/example_project.md)
-- An example README is provided [here](docs/README_example.md)
+This
 
-Students must **replace** this README with a README that is specific to your
-project. **IMPORTANT**: If you do not complete the README, your project will not
-be graded, and you will receive a zero. The TA will not guess how to set up,
-configure, and run your project.
+## Setup
+
+To set up everything, run the `setup.sh` script in the setup_scripts
+directory. This script installs MariaDB and starts the server, creates the
+database tables, and installs the npm dependencies. You only need to run this
+script once per Codespace.
+
+```bash
+./setup_scripts/setup.sh
+```
+
+## Run the Application
+
+Although the setup also does this you can always use npm start as below
+Start the application using the following command:
+
+```bash
+npm start
+```
+
+## Access the Application
+
+On Codespaces, you can access the application by forwarding port 3000. Open the
+forwarded port in your browser to view the application.
